@@ -39,15 +39,6 @@ exports.event = {
             interaction.member = interaction.guild.members.cache.get(interaction.user.id);
             cmd.run(client, interaction, args);
         }
-        if (interaction.isContextMenu()) {
-            await interaction.deferReply({ ephemeral: false });
-            const cmd = client.slash.get(interaction.commandName);
-            if (!cmd)
-                return interaction.followUp({ content: 'An error occured' });
-            const args = [];
-            interaction.member = interaction.guild.members.cache.get(interaction.user.id);
-            cmd.run(client, interaction, args);
-        }
     },
 };
 //# sourceMappingURL=Interaction.js.map

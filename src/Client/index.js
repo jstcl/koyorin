@@ -27,7 +27,6 @@ const fs_1 = require("fs");
 const mongoose_1 = __importDefault(require("mongoose"));
 const consola_1 = __importDefault(require("consola"));
 const dotenv_1 = __importDefault(require("dotenv"));
-const chalk_1 = __importDefault(require("chalk"));
 const path_1 = __importDefault(require("path"));
 dotenv_1.default.config();
 class Bot extends discord_js_1.Client {
@@ -46,15 +45,9 @@ class Bot extends discord_js_1.Client {
     async init() {
         this.login(this.config.TOKEN);
         if (this.config.MONGOURI) {
-            mongoose_1.default
-                .connect(this.config.MONGOURI, {
-                useNewUrlParser: true,
-                useUnifiedTopology: true,
-                autoIndex: false,
-                connectTimeoutMS: 30000,
-            })
-                .then(() => {
-                this.console.success(`${chalk_1.default.bold.green('[DATABASE]')} Connected`);
+            mongoose_1.default.connect(this.config.MONGOURI, {
+                autoIndex: true,
+                connectTimeoutMS: 3000,
             });
         }
         else {
