@@ -3,14 +3,13 @@ version = 1
 [merge]
 automerge_label = "🤖 Auto merge"
 blocking_labels = ["❌ Invalid"]
-method = "merge"
+method = "squash"
 
 [merge.message]
 title = "pull_request_title"
 body_type = "markdown"
 body = "pull_request_body"
 include_pr_number = true
-strip_html_comments = true
 include_pull_request_author = true
 include_coauthors = true
 include_pull_request_url = true
