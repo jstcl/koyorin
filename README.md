@@ -40,13 +40,6 @@ Here are some wonderful people who contributing to this project
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Gifaldyazka">
-            <img src="https://avatars.githubusercontent.com/u/37253794?v=4" width="100;" alt="Gifaldyazka"/>
-            <br />
-            <sub><b>Gifaldy Azka</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/jstcl">
             <img src="https://avatars.githubusercontent.com/u/91227737?v=4" width="100;" alt="jstcl"/>
             <br />
@@ -58,6 +51,13 @@ Here are some wonderful people who contributing to this project
             <img src="https://avatars.githubusercontent.com/u/25180681?v=4" width="100;" alt="renovate-bot"/>
             <br />
             <sub><b>WhiteSource Renovate</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Gifaldyazka">
+            <img src="https://avatars.githubusercontent.com/u/37253794?v=4" width="100;" alt="Gifaldyazka"/>
+            <br />
+            <sub><b>Gifaldy Azka</b></sub>
         </a>
     </td>
     <td align="center">
